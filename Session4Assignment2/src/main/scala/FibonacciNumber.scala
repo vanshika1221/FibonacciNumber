@@ -22,8 +22,3 @@ class FibonacciNumber {
     }
   }
 }
-
-object FibonacciNumber extends App {
-  val fibonacciObject = new FibonacciNumber
-  fibonacciObject.Fibonacci(10)
-}

@@ -9,16 +9,19 @@ class FibonacciNumberTest extends AnyFunSuite {
     val result = Some(55)
     assert(fibonacciObject.Fibonacci(inputNumber) === result)
   }
-
   test("To print 1st fibonacci number") {
     val inputNumber = 1
     val result = Some(1)
     assert(fibonacciObject.Fibonacci(inputNumber) === result)
   }
-
   test("To print 0th fibonacci number") {
     val inputNumber = 0
     val result = Some(0)
+    assert(fibonacciObject.Fibonacci(inputNumber) === result)
+  }
+  test("To print fibonacci number of negative number") {
+    val inputNumber = -1
+    val result = None
     assert(fibonacciObject.Fibonacci(inputNumber) === result)
   }
 }
